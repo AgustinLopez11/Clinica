@@ -1,7 +1,7 @@
 # 🚀 Funcionamiento de una clinica
 
 ## 📝 Clinica (hacer cola para recibir atención médica)
-Este sorftware nos funciona para poder programar la entrada de personas y atenderlas conforme vayan registrandores.
+Este sorftware nos funciona para poder programar la entrada de personas y atenderlas conforme vayan registrandose.
 
 ## 🎯 Objetivos
 - ✅ Funcionamiento de una cola (Estructuras de datos)
