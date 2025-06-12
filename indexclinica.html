@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Cola</title>
+</head>
+
+<body>
+    <h1 class="text-center mb-5 color fw-bold mt-3">Sistema de Turnos - Clínica Médica</h1>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-3 registro">
+                <h3 class="color">Registrar paciente</h3>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre completo</label>
+                    <input type="email" class="form-control" id="input_nombre"
+                        placeholder="Nombre del paciente">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Edad</label>
+                    <input type="email" class="form-control" id="input_edad" placeholder="Edad">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Síntoma principal</label>
+                    <textarea class="form-control" id="input_sintoma"
+                        placeholder="Describa el síntoma principal" rows="3"></textarea>
+                </div>
+                <button class="agregar_a_colaBtn">Agregar a la Cola</button>
+            </div>
+            <div class="col-8 actual">
+                <h3 class="text-center color"><span><i id="mensaje" class="bi bi-bell"></i></span></i> <span class="ms-4">Turno Actual</span></h3>
+                <div class="display_ver_turnos">
+                    <h1 class="text-center text-white display_nombre">No hay pacientes que atender</h1>
+                    <h4 class="text-center text-white display_edad_sintoma"></h4>
+                </div>
+                <div class="d-flex justify-content-center siguiente_paciente">
+                    <button class="siguiente_paciente_btn">Atender al siguiente paciente</button>
+                </div>
+                <div class="proxino-turno_div">
+                    <p class="mt-2 ms-3"><strong>Próximo Turno:</strong> <span class="display_nombre_siguiente">-----</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 espera">
+            <h4 class="color">Pacientes en Espera</h4>
+            <div class="col-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th style="background-color: #3cdacc5d;" scope="col">Posición</th>
+                            <th style="background-color: #3cdacc5d;" scope="col">Nombre</th>
+                            <th style="background-color: #3cdacc5d;" scope="col">Edad</th>
+                            <th style="background-color: #3cdacc5d;" scope="col">Síntoma</th>
+                            <th style="background-color: #3cdacc5d;" scope="col">Hora de llegada</th>
+                        </tr>
+                    </thead>
+                    <tbody class="pacientes_agregados_tabla">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./Clinica-cola.js"></script>
+</body>
+
+</html>

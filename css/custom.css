@@ -1,0 +1,76 @@
+.registro {
+    border: 0.1rem solid rgba(0, 0, 0, 0.158);
+    border-radius: 0.5rem;
+    padding: 2rem;
+
+}
+
+.actual {
+    border: 0.1rem solid rgba(0, 0, 0, 0.158);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+.agregar_a_colaBtn {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #0F766E;
+    border-radius: 0.5rem;
+    color: white;
+    border-color: transparent;
+
+}
+
+.display_ver_turnos {
+    border-radius: 0.5rem;
+    padding: 2rem;
+    background-color: #0F766E;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.siguiente_paciente_btn {
+    padding: 0.7rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 14px;
+    background-color: #0F766E;
+    border-radius: 0.5rem;
+    color: white;
+    border-color: transparent;
+
+}
+
+.proxino-turno_div {
+    padding: 0.2rem;
+    background-color: #28e2d31c;
+    margin-top: 1.5rem;
+    border: 0.1rem solid #0f766d6b;
+    border-radius: 0.5rem;
+}
+
+.espera {
+    border: 0.1rem solid rgba(0, 0, 0, 0.158);
+    border-radius: 0.5rem;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+}
+
+.color {
+    color: #0F766E;
+}
+
+#mensaje {
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@keyframes mover {
+
+    /* 0%{
+        transform: rotateX(10deg);
+    } */
+    100% {
+        transform: translateX(-8px)
+    }
+}
